@@ -106,10 +106,47 @@
       background: var(--accent-light);
     }
 
+    .suggestions-bar {
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+      flex-shrink: 0;
+    }
+
+    .suggestions-label {
+      font-size: 11px;
+      font-family: 'Geist Mono', monospace;
+      color: var(--text-muted);
+      margin-bottom: 8px;
+    }
+
+    .suggestions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .suggestion {
+      font-size: 12px;
+      font-family: 'Geist Mono', monospace;
+      color: var(--accent);
+      border: 1px solid var(--accent-mid);
+      border-radius: 6px;
+      padding: 6px 11px;
+      cursor: pointer;
+      background: var(--accent-light);
+      transition: all 0.15s;
+      user-select: none;
+    }
+
+    .suggestion:hover {
+      background: var(--accent-mid);
+      border-color: #93c5fd;
+    }
+
     .messages {
       flex: 1;
       overflow-y: auto;
-      padding: 28px 0;
+      padding: 24px 0;
       display: flex;
       flex-direction: column;
       gap: 16px;
@@ -122,45 +159,21 @@
     .messages::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
 
     .welcome {
-      padding: 20px 0 8px;
+      padding: 8px 0;
       animation: fadeIn 0.4s ease both;
     }
 
     .welcome-title {
-      font-size: 18px;
+      font-size: 17px;
       font-weight: 600;
       color: var(--text);
-      margin-bottom: 6px;
+      margin-bottom: 5px;
     }
 
     .welcome-desc {
       font-size: 13px;
       color: var(--text-secondary);
-      margin-bottom: 20px;
       line-height: 1.5;
-    }
-
-    .suggestions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 7px;
-    }
-
-    .suggestion {
-      font-size: 12px;
-      font-family: 'Geist Mono', monospace;
-      color: var(--accent);
-      border: 1px solid var(--accent-mid);
-      border-radius: 6px;
-      padding: 7px 12px;
-      cursor: pointer;
-      background: var(--accent-light);
-      transition: all 0.15s;
-    }
-
-    .suggestion:hover {
-      background: var(--accent-mid);
-      border-color: #93c5fd;
     }
 
     .msg {
@@ -334,18 +347,24 @@
       </div>
     </header>
 
+    <div class="suggestions-bar">
+      <div class="suggestions-label">Suggested questions</div>
+      <div class="suggestions">
+        <div class="suggestion" onclick="ask(this)">What projects has he built?</div>
+        <div class="suggestion" onclick="ask(this)">Tell me about AnimeRecBERT</div>
+        <div class="suggestion" onclick="ask(this)">What are his ML skills?</div>
+        <div class="suggestion" onclick="ask(this)">His Kaggle competitions</div>
+        <div class="suggestion" onclick="ask(this)">What is he working on now?</div>
+        <div class="suggestion" onclick="ask(this)">Favorite football team?</div>
+        <div class="suggestion" onclick="ask(this)">Favorite food?</div>
+        <div class="suggestion" onclick="ask(this)">How to contact him?</div>
+      </div>
+    </div>
+
     <div class="messages" id="messages">
       <div class="welcome" id="welcome">
         <div class="welcome-title">Ramazan's AI Manager</div>
         <div class="welcome-desc">Ask me anything about Ramazan — his projects, background, skills, or how to reach him.</div>
-        <div class="suggestions">
-          <div class="suggestion" onclick="ask(this)">What projects has he built?</div>
-          <div class="suggestion" onclick="ask(this)">Tell me about AnimeRecBERT</div>
-          <div class="suggestion" onclick="ask(this)">What are his ML skills?</div>
-          <div class="suggestion" onclick="ask(this)">His Kaggle competitions</div>
-          <div class="suggestion" onclick="ask(this)">How to contact him?</div>
-          <div class="suggestion" onclick="ask(this)">What is he working on now?</div>
-        </div>
       </div>
     </div>
 
