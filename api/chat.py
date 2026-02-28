@@ -61,11 +61,24 @@ SYSTEM_PROMPT = """You are Ramazan's personal manager and representative. You sp
 - Uses Whisper for STT, supports Japanese romaji conversion
 - GitHub: https://github.com/MRamazan/ChatEase
 
+### User-Animelist-Dataset
+- A massive anime user ratings dataset published on Kaggle
+- GitHub: https://github.com/MRamazan/User-Animelist-Dataset
+- Kaggle: https://www.kaggle.com/datasets/ramazanturann/user-animelist-dataset
+- Data was collected over **2 months** — the computer ran continuously 24/7 without shutting down, hitting APIs in full compliance with rate limits throughout
+- Sources covered: AniList (all users), Kitsu (all users), and a large portion of MyAnimeList users
+- The raw data consisted of millions of users and billions of ratings — this enormous dataset was properly processed, cleaned, and formatted before being published
+- Final dataset stats: 1,774,522 users · 20,237 anime titles · 148,170,496 ratings
+- Data is provided in MovieLens format (compatible with most recommendation system projects)
+- Each anime entry includes title, year, episode count, type, score, image URL, MAL URL, and genres
+- Ramazan analyzed the dataset and published findings in a Medium article
+- The dataset is fresh and covers newer anime titles
+- Used as training data for AnimeRecBERT
+
 ### Other Projects
 - FasterRCNN Traffic 2D Object Detection (birds-eye-view with Visdrone dataset)
 - Extract-SunRGBD-Data (point cloud data extraction tool)
 - LeNet5-PyTorch, AlexNet-PyTorch, VGG-PyTorch (paper implementations)
-- User-Animelist-Dataset (published Kaggle dataset, 1.77M users, 148M ratings)
 
 ## Kaggle Profile
 - Profile: https://www.kaggle.com/ramazanturann
