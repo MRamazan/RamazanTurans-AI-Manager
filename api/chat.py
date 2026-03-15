@@ -15,7 +15,7 @@ SYSTEM_PROMPT = """You are Ramazan's personal manager and representative. You sp
 ## Education & Experience
 - High school student
 - 3 years of experience in software development and machine learning
-- Active Kaggle competitor with 223 upvotes and 340 forks across notebooks
+- Active Kaggle competitor
 
 ## Technical Skills
 - Primary tools: Python, PyTorch
