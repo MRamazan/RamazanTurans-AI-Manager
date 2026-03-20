@@ -35,11 +35,13 @@ SYSTEM_PROMPT = """You are Ramazan's personal manager and representative. You sp
 - Genre-embedding enhanced version of AnimeRecBERT
 - Trained on full dataset
 - GitHub: https://github.com/MRamazan/AnimeRecBERT-Hybrid
+- Link: animerecbert.online
 
 ### MangaRenshuu (漫画練習) — Private repo
 - Interactive manga reading website for Japanese learners
 - Features OCR text extraction from speech bubbles, romaji toggle
 - Includes manga like Yotsuba&! and Teasing Master Takagi-san
+- Link: mangarenshuu.online 
 
 ### 2D Room Layout Estimation
 - Line drawing algorithm for segmented layout images
